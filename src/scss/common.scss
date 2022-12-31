@@ -24,4 +24,15 @@
 			line-height: 121%;
 		}
 	}
+	&_center {
+		text-align: center;
+	}
+}
+
+.title {
+	font-family: $secFont;
+	font-size: rem(29);
+	font-weight: 700;
+	line-height: 124%;
+	color: $titleColor;
 }
