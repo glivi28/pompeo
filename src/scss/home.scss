@@ -1,3 +1,39 @@
 //====================================================================================================
+.hero {
+	padding: rem(94) rem(114);
+	// .hero__container
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	// .hero__content
+	&__content {
+		z-index: 5;
+		position: relative;
+		flex-basis: rem(576);
+	}
+	// .hero__title
+	&__title {
+		margin-bottom: rem(14);
+	}
+	// .hero__text
+	&__text {
+		margin-bottom: rem(50);
+		font-size: rem(16);
+		line-height: 162%;
+	}
+	// .hero__button
+	&__button {
+	}
+	// .hero__image-ibg
+	&__image-ibg {
+		flex: 0 0 64%;
+		margin-right: -14%;
+		left: rem(-88);
+		padding-bottom: percent(388, 1150);
+	}
+}
 
+.button {
+}
 //====================================================================================================
