@@ -36,3 +36,26 @@
 	line-height: 124%;
 	color: $titleColor;
 }
+
+.section-tag {
+	position: absolute;
+	top: 47%;
+	font-family: $secFont;
+	font-size: rem(19);
+	line-height: 179%;
+	letter-spacing: rem(1);
+	text-transform: uppercase;
+	color: #dbdbdb;
+	// .section-tag_left
+	&_left {
+		left: rem(-150);
+		transform: rotate(-90deg);
+	}
+	&_right {
+		right: rem(-150);
+		transform: rotate(90deg);
+	}
+	&_about {
+		top: 26%;
+	}
+}
