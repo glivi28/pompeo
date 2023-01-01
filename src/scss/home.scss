@@ -237,3 +237,34 @@
 	}
 }
 //========================================================================================================================================================
+.shopping {
+	padding: rem(120) 0;
+	background: url("@img/shopping-bg.jpg") 0 0 / cover no-repeat;
+	// .shopping__container
+	&__container {
+	}
+	// .shopping__content
+	&__content {
+		max-width: rem(566);
+	}
+	// .shopping__title
+	&__title {
+		margin-bottom: rem(13);
+	}
+	// .shopping__text
+	&__text {
+		max-width: rem(421);
+		margin-bottom: rem(30);
+		font-weight: 700;
+		font-size: rem(16);
+		line-height: 150%;
+		color: #6c6c6c;
+		span {
+			color: $accentColor;
+		}
+	}
+	// .shopping__button
+	&__button {
+	}
+}
+//========================================================================================================================================================
