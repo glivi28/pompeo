@@ -268,3 +268,80 @@
 	}
 }
 //========================================================================================================================================================
+.contacts {
+	padding-top: rem(122);
+	padding-bottom: rem(134);
+	// .contacts__container
+	&__container {
+		position: relative;
+	}
+	// .contacts__content
+	&__content {
+	}
+	// .contacts__image
+	&__image {
+		width: rem(80);
+		margin: 0 auto;
+		margin-bottom: rem(40);
+		img {
+			width: 100%;
+		}
+	}
+	// .contacts__title
+	&__title {
+		margin-bottom: rem(63);
+	}
+	// .contacts__form
+	&__form {
+		max-width: rem(500);
+		margin: 0 auto;
+		text-align: center;
+	}
+	// .contacts__field
+	&__field {
+		display: flex;
+		align-items: stretch;
+		column-gap: rem(4);
+		margin-bottom: rem(40);
+	}
+	// .contacts__input
+	&__input {
+	}
+	// .contacts__button
+	&__button {
+	}
+}
+.section-tag {
+	// .section-tag_right
+	&_right {
+	}
+}
+.store {
+	// .store__title
+	&__title {
+	}
+}
+.headline {
+	// .headline_center
+	&_center {
+	}
+	// .headline__subtitle
+	&__subtitle {
+	}
+	// .headline__title
+	&__title {
+	}
+}
+.input {
+}
+.button {
+}
+.checkbox {
+	// .checkbox__input
+	&__input {
+	}
+	// .checkbox__label
+	&__label {
+	}
+}
+//========================================================================================================================================================

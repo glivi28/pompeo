@@ -10,11 +10,17 @@ textarea {
 }
 .input {
 	border-radius: 0 !important;
+	font-family: $secFont;
 	width: 100%;
 	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
+	padding: 0px rem(40);
+	border: 1px solid #ebebeb;
+	font-weight: 400;
+	font-size: rem(14);
+	line-height: 143%;
+	color: #a1a1a1;
 	&._form-focus {
+		color: $titleColor;
 	}
 	&._form-error {
 	}

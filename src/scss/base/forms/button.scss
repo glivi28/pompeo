@@ -14,6 +14,14 @@
 	background-color: #ac1313;
 	text-align: center;
 	transition: all 0.3s ease 0s;
+	&_subs {
+		min-width: rem(175);
+		font-weight: 400;
+		line-height: 143%;
+		text-align: center;
+		color: #ffffff;
+		background-color: #000;
+	}
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: lighten($color: #ac1313, $amount: 10%);

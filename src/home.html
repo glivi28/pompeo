@@ -202,6 +202,37 @@
 				</div>
 			</section>
 			<!-- /.shopping -->
+
+			<section class="contacts">
+				<div class="contacts__container">
+					<p class="section-tag section-tag_right">Let's Get In touch</p>
+					<div class="contacts__content">
+						<div class="contacts__image">
+							<img src="@img/contact.png" alt="">
+						</div>
+						<div class="contacts__title headline headline_center">
+							<p class="headline__subtitle">Latest news</p>
+							<h2 class="headline__title headline__title_regular">
+								Latest news
+								<img src="@img/decor.svg" alt="">
+								New updates
+							</h2>
+						</div>
+						<form class="contacts__form" action="files/sendmail/sendmail.php" method="POST">
+							<div class="contacts__field">
+								<input class="contacts__input input" type="email" name="form[email]" data-error="Error"
+									placeholder="Enter your email">
+								<button type="submit" class="contacts__button button button_subs">SUBSCRIBE</button>
+							</div>
+							<div class="checkbox">
+								<input type="text" id="check" class="checkbox__input">
+								<label for="check" class="checkbox__label">Sign up for our newsletter</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- /.contacts -->
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

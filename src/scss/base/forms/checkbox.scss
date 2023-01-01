@@ -21,7 +21,11 @@
 		cursor: pointer;
 		display: inline-flex;
 		position: relative;
-		gap: 10px;
+		font-family: $secFont;
+		line-height: 143%;
+		text-align: center;
+		color: #a1a1a1;
+		gap: rem(10);
 		&:before {
 			content: "";
 			align-self: flex-start;

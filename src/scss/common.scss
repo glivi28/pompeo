@@ -2,9 +2,12 @@
 .headline {
 	display: flex;
 	flex-direction: column;
-	row-gap: rem(10);
+	row-gap: rem(27);
 	font-family: $secFont;
 	font-weight: 700;
+	img {
+		margin-top: rem(-17);
+	}
 	// .headline__subtitle
 	&__subtitle {
 		font-size: 14px;
@@ -22,6 +25,9 @@
 		&_main {
 			font-size: rem(48);
 			line-height: 121%;
+		}
+		&_regular {
+			font-weight: 400;
 		}
 	}
 	&_center {
