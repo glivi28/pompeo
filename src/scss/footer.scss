@@ -1,3 +1,74 @@
 //====================================================================================================
+.footer {
+	background-color: #fbfbfb;
+	// .footer__top
+	&__top {
+		padding-top: rem(120);
+		padding-bottom: rem(80);
 
+		border-top: rem(1) solid #e5e5e5;
+		border-bottom: rem(1) solid #e5e5e5;
+	}
+	// .footer__container
+	&__container {
+	}
+	// .footer__slogan
+	&__slogan {
+		max-width: rem(340);
+		margin: 0 auto;
+		margin-bottom: rem(70);
+		text-align: center;
+		line-height: 171%;
+		text-align: center;
+		color: #6c6c6c;
+	}
+	// .footer__logo
+	&__logo {
+		display: inline-block;
+		margin-bottom: rem(30);
+	}
+	// .footer__content
+	&__content {
+		@include gridCards();
+		justify-items: center;
+	}
+	// .footer__col
+	&__col {
+		text-align: center;
+	}
+	// .footer__email
+	&__email {
+	}
+	// .footer__caption
+	&__caption {
+		margin-top: rem(10);
+		margin-bottom: rem(20);
+		font-family: $secFont;
+		font-size: rem(13);
+		line-height: 177%;
+		letter-spacing: rem(1);
+		text-transform: uppercase;
+		color: $titleColor;
+	}
+	// .footer__descr
+	&__descr {
+		line-height: 171%;
+	}
+	// .footer__phone
+	&__phone {
+	}
+	// .footer__bottom
+	&__bottom {
+		padding: rem(30) 0;
+	}
+	// .footer__info
+	&__info {
+		font-size: rem(12);
+		line-height: 183%;
+		text-align: center;
+		span {
+			color: $titleColor;
+		}
+	}
+}
 //====================================================================================================
