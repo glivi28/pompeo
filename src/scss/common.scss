@@ -6,25 +6,43 @@
 	font-family: $secFont;
 	font-weight: 700;
 	img {
+		@include adaptiveValue("width", 53, 40, 0, 992, 480);
 		margin-top: rem(-17);
+		@media (max-width: $tablet) {
+			margin-top: rem(0);
+		}
 	}
 	// .headline__subtitle
 	&__subtitle {
 		font-size: 14px;
-		line-height: 171%;
+		margin-bottom: rem(17);
+		line-height: 100%;
 		letter-spacing: rem(2);
 		text-transform: uppercase;
 		color: #d77474;
+		@media (max-width: $tablet) {
+			margin-bottom: 0;
+		}
+		&_mb-0 {
+			margin-bottom: 0;
+		}
 	}
 	// .headline__title
 	&__title {
-		font-size: rem(40);
-		line-height: 125%;
+		@include adaptiveValue("font-size", 40, 32, 0, 992, 480);
+		line-height: 120%;
 		color: $titleColor;
 		// .headline__title_main
 		&_main {
+			position: relative;
+			top: rem(-10);
 			font-size: rem(48);
-			line-height: 121%;
+			@include adaptiveValue("font-size", 48, 36, 0, 992, 480);
+			// line-height: 121%;
+		}
+		&_fz-36 {
+			margin-top: rem(-5);
+			font-size: rem(36);
 		}
 		&_regular {
 			font-weight: 400;
@@ -54,11 +72,11 @@
 	color: #dbdbdb;
 	// .section-tag_left
 	&_left {
-		left: rem(-150);
+		left: rem(-170);
 		transform: rotate(-90deg);
 	}
 	&_right {
-		right: rem(-150);
+		right: rem(-170);
 		transform: rotate(90deg);
 	}
 	&_about {

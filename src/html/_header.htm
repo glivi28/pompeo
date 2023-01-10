@@ -1,14 +1,15 @@
 <header class="header">
 	<div class="header__container">
-		<a href="#" class="header__logo"><img src="@img/logo.svg" alt=""></a>
-		<div class="header__menu menu">
+		<button type="button" class="menu__icon icon-menu" aria-label="Open-Close menu"><span></span></button>
 
+		<a href="#" class="header__logo"><img src="@img/logo.svg" alt="Pompeo"></a>
+		<div class="header__menu menu">
 			<nav class="menu__body">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">About</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+					<li class="menu__item"><a href="#" data-goto=".hero" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About</a></li>
+					<li class="menu__item"><a href="#" data-goto=".store" class="menu__link">Shop</a></li>
+					<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Contact</a></li>
 				</ul>
 			</nav>
 			<a href="#" class="header__cart">
@@ -19,7 +20,6 @@
 				</svg>
 				<span>Cart</span>
 			</a>
-			<button type="button" class="menu__icon icon-menu"><span></span></button>
 		</div>
 	</div>
 </header>

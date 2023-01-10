@@ -1,25 +1,51 @@
 //====================================================================================================
 .header {
+	position: relative;
 	padding: rem(15) 0;
+	padding-top: rem(20);
+	padding-bottom: rem(29);
 	min-height: rem(90);
+	@media (max-width: $mobileSmall) {
+		&::before {
+			content: "";
+			z-index: 25;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+		}
+	}
 	// .header__container
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		column-gap: rem(50);
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: rem(10);
+		}
+		@media (max-width: $mobileSmall) {
+			flex-direction: row;
+		}
 	}
 	// .header__logo
 	&__logo {
+		position: relative;
+		z-index: 25;
 	}
 	// .header__menu
 	&__menu {
 		display: flex;
 		align-items: center;
 		column-gap: rem(38);
+		padding-top: rem(6);
 	}
 	// .header__cart
 	&__cart {
+		z-index: 25;
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -55,16 +81,40 @@
 .menu {
 	// .menu__body
 	&__body {
+		@media (max-width: $mobileSmall) {
+			z-index: 20;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			padding-top: rem(100);
+			background-color: #fff;
+			transform: translateX(100%);
+			overflow: auto;
+			transition: all 0.5s ease 0s;
+			.menu-open & {
+				transform: translateX(0);
+			}
+		}
 	}
 	// .menu__list
 	&__list {
 		display: flex;
 		align-items: center;
+		overflow: auto;
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+		}
 	}
 	// .menu__item
 	&__item {
 		&:not(:last-child) {
-			margin-right: rem(40);
+			margin-right: rem(43);
+			@media (max-width: $mobileSmall) {
+				margin-right: 0;
+				margin-bottom: rem(20);
+			}
 		}
 	}
 	// .menu__link
@@ -81,6 +131,10 @@
 				color: $accentColor;
 			}
 		}
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+			// font-weight: 500;
+		}
 	}
 	// .menu__icon
 	&__icon {
@@ -90,12 +144,12 @@
 //Burger
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: $mobileSmall) {
 		display: block;
 		position: relative;
 		width: rem(30);
 		height: rem(18);
-		z-index: 5;
+		z-index: 25;
 		@media (any-hover: none) {
 			cursor: default;
 		}

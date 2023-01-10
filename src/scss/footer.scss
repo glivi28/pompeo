@@ -3,9 +3,8 @@
 	background-color: #fbfbfb;
 	// .footer__top
 	&__top {
-		padding-top: rem(120);
-		padding-bottom: rem(80);
-
+		@include adaptiveValue("padding-top", 112, 60, 0, 992, 480);
+		@include adaptiveValue("padding-bottom", 80, 50, 0, 992, 480);
 		border-top: rem(1) solid #e5e5e5;
 		border-bottom: rem(1) solid #e5e5e5;
 	}
@@ -16,7 +15,7 @@
 	&__slogan {
 		max-width: rem(340);
 		margin: 0 auto;
-		margin-bottom: rem(70);
+		@include adaptiveValue("margin-bottom", 70, 35, 0, 992, 480);
 		text-align: center;
 		line-height: 171%;
 		text-align: center;
@@ -25,7 +24,7 @@
 	// .footer__logo
 	&__logo {
 		display: inline-block;
-		margin-bottom: rem(30);
+		margin-bottom: rem(22);
 	}
 	// .footer__content
 	&__content {
